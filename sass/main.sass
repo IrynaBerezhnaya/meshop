@@ -1,0 +1,1763 @@
+@import "fonts"
+
+$regular-fs: 16px
+$red-gradient: linear-gradient(90deg, rgba(249, 35, 111, 1) 0%, rgba(249, 35, 70, 1) 100%)
+$pink: #ff377e
+
+$bebas_bold: BebasNeue-Bold, Arial, sans-serif
+$bebas_reg: BebasNeue-Regular, Arial, sans-serif
+$mont_black: Montserrat-Black, Arial, sans-serif
+$mont_bold: Montserrat-Bold, Arial, sans-serif
+$mont_extra_b: Montserrat-ExtraBold, Arial, sans-serif
+$mont_med: Montserrat-Medium, Arial, sans-serif
+$mont_med_it: Montserrat-MediumItalic, Arial, sans-serif
+$mont_reg: Montserrat-Regular, Arial, sans-serif
+
+
+$hover: #f92357
+$padding-top: calc(100vh - 15px)
+
+
+%btn
+  font-family: $mont_black
+  color: #ffffff
+  font-size: 20px
+  border-radius: 0
+  padding: .5rem 1.25rem
+  background: $red-gradient
+  border: 1px solid #ff377e
+
+%title
+  font-family: $mont_black
+  font-size: 26px
+  color: #000
+  text-transform: uppercase
+
+%subtitle
+  font-family: $mont_med
+  font-size: 16px
+  color: #000
+
+/*Сбрасываем настройки браузера*/
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+a
+  transition: .33s all ease
+
+  &:hover
+    text-decoration: none
+
+img
+  max-width: 100%
+
+.main-bg
+  //bg на весь сайт
+  background-image: url(../img/bg.png)
+  background-repeat: repeat
+  background-size: auto
+  max-width: 100%
+  height: auto
+  padding-left: 0
+  padding-right: 0
+
+  .card
+    border: 0
+
+    .card-img-overlay
+      display: flex
+      justify-content: space-between
+
+.message
+  width: 100%
+  border-radius: 0
+
+
+.show + .fixed-top
+  margin-top: 74px
+
+.bg-fixed
+  background-image: url("../img/bg-top_red.png")
+  background-repeat: no-repeat
+  background-size: cover
+
+.text-fixed
+  font-family: $mont_bold
+  font-size: 20px
+  color: #ffffff
+  padding: 12px
+
+.ib-btn-close
+  font-family: $mont_bold
+  background-color: #ffffff
+  border: 1px solid #ffffff
+  font-size: 1rem
+  line-height: 33px
+  border-radius: 50%
+  padding: 0
+  width: 33px
+  height: 33px
+
+  &:focus
+    box-shadow: none
+
+.first-section
+  position: relative
+  background-image: url("../img/main_promo_bg.png")
+  background-repeat: no-repeat
+  background-size: cover
+  background-color: #bae9ff
+  min-height: 1060px
+  display: flex
+  justify-content: flex-end
+  flex-direction: column
+
+// for shop.html
+.shop-section
+  position: relative
+  background-image: url("../img/overlay_1.png")
+  background-repeat: no-repeat
+  background-size: cover
+  background-color: #bae9ff
+  min-height: 1060px
+  display: flex
+  justify-content: flex-end
+  flex-direction: column
+  margin: 0 auto
+  text-align: center
+  padding-bottom: 80px
+
+.img-main
+  border: 1px solid #ccc
+  width: 520px
+  height: 600px
+  padding: 5px
+  text-align: center
+  margin: 0 auto
+
+
+.thumbs img
+  border: 1px solid #ccc
+  width: 100px
+  height: 100px
+  padding: 4px
+  text-align: center
+
+
+.ib-nav
+  position: absolute
+  top: 0
+  right: 0
+  left: 0
+  z-index: 90
+  background-color: rgba(255, 255, 255, 0.6)
+
+.ib-nav-bgc
+  background-color: rgba(255, 255, 255, 0.6)
+
+.nav-email
+  padding-left: 85px
+
+.ib-navbar-brand
+  font-family: $mont_black
+  color: #222222
+  font-size: 26px
+
+.ib-nav-link
+  font-size: 16px
+  font-family: $mont_bold
+  padding: 8px
+
+.icon-link
+  padding:
+    left: 14px !important
+    right: 14px !important
+
+
+.navbar-light .navbar-nav .nav-link
+  color: #222
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover
+  color: $hover
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover
+  color: $hover
+
+.navbar-expand-lg .navbar-collapse
+  justify-content: flex-end
+
+.navbar
+  padding: 6px 0
+
+.ib-nav-bgc .navbar
+  padding: 38px 0
+
+.ib-nav-icons
+  padding-left: 25px
+
+.ib-nav-icon
+  padding-left: 20px
+
+.nav-text
+  color: #222222
+  font-size: 15px
+  font-family: "Times New Roman", Arial, sans-serif
+  margin-top: 15px
+
+
+.ib-link
+  font-family: $mont_extra_b
+  font-size: 16px
+  color: #222222
+  text-transform: uppercase
+  padding:
+    left: 10px
+    right: 10px
+
+  &:hover
+    color: $hover
+
+.ib-border
+  border-bottom: 1px solid
+
+.ib-text-center
+  padding-top: 17%
+  top: 0
+  bottom: 0
+  display: flex
+  align-items: center
+
+
+.text-big-title
+  font-family: $mont_extra_b
+  font-size: 121px
+  color: #222222
+  line-height: .72
+  letter-spacing: -10px
+
+.text-big-title_2
+  color: #f9236f
+
+.text-big-title_year
+  font-family: $mont_extra_b
+  font-size: 50px
+  color: #222222
+  line-height: 1.1
+  padding-left: 8%
+  letter-spacing: 92px
+  text-align: center
+
+.text-bt
+  font-family: $mont_med
+  font-size: 16px
+  color: #494949
+  text-align: center
+  padding: 18px 50px 0
+
+.ib-btn
+  @extend %btn
+
+.some-information
+  position: relative
+  z-index: 2
+  background-color: #ffffff
+  margin-top: -55px
+
+.title-info
+  position: relative
+  z-index: 2
+  font-family: $mont_black
+  font-size: 30px
+  color: #000
+
+.ib-text-info
+  font-family: $mont_med
+  font-size: 16px
+  color: #000
+  margin-bottom: 0
+
+.circle-icon
+  position: relative
+  width: 126px
+  height: 126px
+  background: #fff
+  border-radius: 50%
+  line-height: 126px
+  margin: 0 auto -80px
+  top: -63px
+  z-index: 1
+
+.ib-banner
+  display: flex
+  flex-direction: row
+  margin: 100px auto 0
+  max-width: 1105px
+
+.banners
+  position: relative
+  width: calc(100% / 2)
+  min-height: 292px
+
+.banner-01
+  background: url("../img/banner-01.png") #d7eff9 100% no-repeat
+  margin-right: 40px
+
+.banner-02
+  background: url("../img/t-shirt.png") #d7eff9 100% no-repeat
+
+.banner-title
+  font-family: $mont_extra_b
+  font-size: 48px
+  color: #222222
+  line-height: .67
+  letter-spacing: -4px
+
+.banner-title_2
+  color: #f9236f
+
+.banner-text
+  font-family: $mont_med
+  color: #494949
+  font-size: 16px
+  max-width: 230px
+  padding-top: 15px
+
+.block-featured-products
+  padding-top: 100px
+
+.title-featured-products
+  @extend %title
+
+.text-featured-products
+  @extend %subtitle
+  padding: 15px 0 20px
+
+
+.description-carousel
+  font-family: $mont_bold
+  font-size: 18px
+  color: #000
+  margin: 20px 0 5px
+
+.name-product
+  font-family: $mont_med
+  font-size: 16px
+  color: #000
+  margin-bottom: 20px
+
+.ib-price
+  margin:
+    top: 10px
+    bottom: 16px
+  font-family: $mont_med
+  font-size: 16px
+  color: #6b6b6b
+
+.new-price
+  font-family: $mont_extra_b
+  font-size: 18px
+  color: #000
+  padding-left: 10px
+
+.fa-star.to-check:before,
+.fa-star.checked
+  color: #ffc808
+  font-weight: 900
+
+.fa-star.no-to-check:before
+  font-weight: 300
+
+.fa-star
+  color: #ffc808
+  font-weight: 300
+  cursor: pointer
+  padding: 6px
+
+.owl-carousel
+  position: relative
+
+.owl-nav
+  position: absolute
+  width: 100%
+  bottom: 40px
+  z-index: 999
+  display: flex
+  justify-content: center
+
+.ib-owl-carousel .owl-nav button.owl-next,
+.ib-owl-carousel .owl-nav button.owl-prev
+  color: #cacaca
+  padding: 3px !important
+  transition: .3s
+
+
+.ib-circle
+  padding: 10px 2px
+
+  &:hover
+    color: #f92357
+
+
+button.owl-prev:focus,
+button.owl-next:focus
+  outline: none
+
+.section-carousel
+  margin-bottom: 100px
+
+.bg-news
+  position: relative
+  background: url("../img/bg-news.png") no-repeat 0 0
+  background-size: cover
+  margin-top: -60px
+  z-index: 1
+
+  &:after
+    content: ''
+    position: absolute
+    background-color: #f6f6f6
+    opacity: 0.8
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+
+.title-news
+  @extend %title
+  text-transform: capitalize
+
+.block-news
+  position: relative
+  padding-top: 130px
+  padding-bottom: 180px
+  text-align: center
+  z-index: 3
+
+.subtitle-news
+  @extend %subtitle
+  padding:
+    top: 20px
+    bottom: 50px
+
+.col-news
+  padding: 0
+  margin-right: 40px
+
+  &:last-child
+    margin-right: 0
+
+
+.ib-card-deck
+  margin:
+    right: -20px
+    left: -20px
+
+  & .card
+    margin:
+      right: 20px
+      left: 20px
+    border-radius: 0
+
+.ib-card-title
+  font-family: $mont_extra_b
+  font-size: 18px
+  color: #515151
+  margin-bottom: 5px
+
+.ib-card-body
+  padding: 30px
+
+.ib-card-subtitle
+  font-family: $mont_med
+  font-size: 14px
+  color: #a8a8a8
+  margin-bottom: 20px
+
+.ib-card-text
+  font-family: $mont_med
+  font-size: 14px
+  color: #494949
+
+.ib-btn-card
+  font-family: $mont_bold
+  color: #ffffff
+  font-size: 13px
+  border-radius: 0
+  padding: 10px 15px 10px 12px
+  background: $red-gradient
+  border: 1px solid #ff377e
+
+.icon-card
+  color: #f92349
+  padding-left: 10px
+
+.br-icon
+  border-right: 1px solid #cccccc
+  padding-right: 10px
+  height: 50%
+
+.product-section
+  position: relative
+  z-index: 2
+  margin-top: -100px
+  background-color: #ffffff
+
+.title-product-section
+  @extend %title
+  text-transform: capitalize
+  text-align: center
+  margin: 15px 0 25px
+
+.ib-products_img
+  padding: 20px 0
+
+.ib-products_description
+  line-height: 1.2
+  padding: 20px 0 15px
+
+  & .subtitle_brand
+    line-height: 1
+    font-family: $mont_bold
+    font-size: 18px
+    color: #000
+
+.name-brand,
+.description-cart
+  font-family: $mont_med_it
+  font-size: 17px
+  color: #939393
+
+
+.ib-price-products
+  padding-top: 20px
+
+.new-price-products
+  color: #f92349
+
+.ib-border_b
+  border-bottom: 1px solid #c2c2c2
+  width: 100%
+
+.pbb
+  padding-top: 20px
+
+.block-subscribe
+  text-align: center
+  padding-top: 80px
+  padding-bottom: 50px
+
+  & .title-subscribe
+    @extend %title
+    text-transform: none
+
+  & .subtitle-subscribe
+    @extend %subtitle
+    padding: 10px 0 35px
+
+
+.center-banner
+  margin: 0 15px
+  background-image: url("../img/center-banner.png")
+  background-repeat: no-repeat
+  background-size: 86% 96%
+  background-position: 50% 0
+
+.ib-padding
+  padding: 50px 30px 0
+
+.bg-center-banner
+  font-family: $bebas_bold
+  color: #ffffff
+  line-height: 1
+  padding: 1.25rem
+
+.ib-fs_1
+  font-size: 75px
+  padding-top: 52px
+
+.ib-fs_2
+  font-size: 130px
+  line-height: .4
+
+.ib-fs_3
+  font-size: 62px
+  line-height: 1.4
+
+.ib-fs_4
+  font-size: 120px
+  line-height: .3
+
+.ib-bb
+  border-bottom: 4px solid #ffffff
+  width: 52%
+  margin: 12% auto
+
+.ib-fs_5
+  font-size: 134px
+  line-height: .3
+
+.btn-subscribe
+  letter-spacing: 1px
+  font-family: $mont_bold
+  font-size: 13px
+  color: #ffffff
+  border-radius: 0
+  padding: .6rem 1.25rem
+  border: 1px solid #ff377e
+  background: $red-gradient
+
+  &:hover
+    color: #fff
+
+.ib-email
+  display: inline-block
+  border: 1px solid #a1a1a1
+  width: 45%
+  background-color: transparent
+  border-radius: 0
+  font-size: 18px
+
+.brands-logo
+  position: relative
+  top: -85px
+  margin-bottom: -85px
+  z-index: 1
+  background-color: #eee
+  padding-bottom: 55px
+
+.detail-brands-logo
+  padding-top: 150px
+  display: flex
+  flex-wrap: wrap
+  max-width: 1000px
+  margin: 0 auto
+
+.footer
+  background: $red-gradient
+  mix-blend-mode: darken
+
+.title-footer
+  font-family: $mont_black
+  font-size: 20px
+  color: #fff
+  margin: 80px 0 30px
+
+.payment
+  margin: 35px 0 15px
+
+.icon-payment
+  color: #f7bcc5
+  font-size: 27px
+  margin-right: 10px
+
+.text-footer
+  font-family: $mont_med
+  font-size: 15px
+  color: #fff
+  margin-bottom: 40px
+
+.address-footer
+  font-family: "Times New Roman", Arial, sans-serif
+  font-size: 15px
+  color: #fff
+  letter-spacing: 1px
+
+.icons-footer
+  margin-right: 15px
+  margin-bottom: 15px
+
+.ib-link-footer
+  font-family: $mont_med
+  font-size: 16px
+  color: #fff
+  padding-bottom: 14px
+
+.detail-block_1
+  padding-left: 30px
+  padding-right: 0
+
+.ib-follow_us
+  font-family: $mont_reg
+  font-size: 14px
+  color: #fff
+  padding-bottom: 10px
+
+.nav-icons-footer
+  font-family: $mont_med
+  font-size: 14px
+  color: #fff
+  padding: 20px
+  margin: 30px 0 15px
+
+.bottom_text-footer
+  font-family: "Times New Roman", Arial, sans-serif
+  font-size: 14px
+  color: #fff
+  text-align: center
+  letter-spacing: 1.2px
+  padding-bottom: 95px
+
+.circle
+  display: inline-block
+  width: 11px
+  height: 11px
+  line-height: 10px
+  background-color: transparent
+  border-radius: 100%
+  border: 1px solid #fff
+  color: #fff
+  font-size: 11px
+
+.ib-nav_single-page
+  background-color: rgba(235, 246, 255, .8)
+
+.single_product-block
+  background-color: #fff
+  padding:
+    top: 60px
+    bottom: 80px
+
+  & .owl-nav
+    justify-content: space-between
+    bottom: 50%
+
+.title-single_product
+  font-family: $mont_bold
+  font-size: 18px
+  color: #000
+
+.text-add
+  cursor: pointer
+  transition: .3s
+
+  &:hover
+    color: $hover
+
+.text-share
+  word-spacing: 6px
+
+.icon-share
+  padding: 8px
+  color: #575153
+
+  &:hover
+    color: $hover
+
+.price-single_product
+  font-family: $mont_extra_b
+  font-size: 30px
+  color: #000
+  padding: 25px 0
+
+.details-price-single_product
+  font-size: 25px
+  font-family: $mont_med
+  padding-right: 15px
+  color: #6b6b6b
+
+.description-single_product
+  font-family: $mont_med
+  font-size: 14px
+  color: #494949
+
+.ib-list
+  padding-left: 20px
+
+.ib-form
+  padding: 18px 0
+
+.btn-single_product
+  letter-spacing: 1px
+  padding: .6rem 1rem
+  text-transform: capitalize
+
+.icon-btn
+  padding-right: 5px
+
+.ib-nav-pills
+  font-family: $mont_bold
+  font-size: 16px
+  color: #575153
+  padding: .5rem 2rem
+
+  &:hover
+    color: #000
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link
+  background: $red-gradient
+
+.nav-pills .nav-link
+  border-radius: 0
+
+.ib-text-pills
+  font-family: $mont_reg
+  font-size: 14px
+  color: #222222
+
+.details_single-product
+  padding: 15px
+
+.navbar-light .navbar-toggler
+  border-color: transparent
+
+.navbar-light .navbar-toggler-icon
+  background-image: none
+
+.ib-toggler-icon
+  color: #000
+  letter-spacing: 2px
+
+  &:hover
+    color: $pink
+
+.nav-item a
+  transition: none
+
+.form-control:not(.ib-add-user-button):focus
+  background-color: #fff7f8
+  border-color: #ca0a0a
+  box-shadow: none
+
+.sign_up-block
+  background-color: #ffffff
+  padding-top: 40px
+  padding-bottom: 60px
+  min-height: 75vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.link-sign_up
+  font-family: $mont_med
+  font-size: 16px
+  color: $pink
+
+.ib-border-left
+  border-left: 1px solid #eee
+
+.map-block
+  margin-bottom: 100px
+
+.map-responsive
+  overflow: hidden
+  padding-bottom: 40%
+  position: relative
+  height: 100%
+
+.map-responsive iframe
+  left: 0
+  height: 100%
+  width: 100%
+  position: absolute
+
+.about_us
+  background-color: #fff
+  padding:
+    top: 50px
+    bottom: 60px
+
+.title-subs
+  font-family: $mont_bold
+  font-size: 26px
+  color: #000
+
+.subtitle-subs
+  font-family: $mont_med
+  font-size: 16px
+  color: #494949
+
+.description-about_us
+  background-color: #eee
+
+li .nav-link
+  display: inline-block
+
+.ib-list-unstyled
+  font-family: "Times New Roman", Arial, sans-serif
+  font-size: 16px
+  color: #6b6b6b
+
+.icons-contact
+  margin-right: 15px
+  margin-bottom: 10px
+
+.icon-about_us
+  display: inline-block
+  width: 30px
+  height: 30px
+  margin-right: 10px
+  line-height: 30px
+  border-radius: 50%
+  color: #fff
+  text-align: center
+  background-color: $pink
+  border: 1px solid $pink
+
+  &:hover
+    color: $pink
+    background-color: transparent
+
+
+.news-overlay
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  display: flex
+  flex-direction: column
+  justify-content: center
+  color: #fff
+  padding: 50px 55px 45px
+  background-color: rgba(249, 35, 111, .4)
+  opacity: 0
+  transform: scale(0.7)
+  transition: 250ms ease-in-out
+//Анимация начинается и заканчивается медленно
+
+
+.card-news:hover .news-overlay
+  opacity: 1
+  transform: scale(1)
+
+.icon-overlay
+  font-size: 40px
+  line-height: 1
+
+.hover-top-element
+  opacity: 0
+  transform: translateY(30px)
+  transition: 250ms 320ms linear
+
+.hover-bottom-element
+  opacity: 0
+  transform: translateY(-40px)
+  transition: 250ms 320ms linear
+
+.card-news:hover .hover-top-element
+  opacity: 1
+  transform: translateY(0)
+
+.card-news:hover .hover-bottom-element
+  opacity: 1
+  transform: translateY(0)
+
+.text-overlay-element
+  margin-top: 10px
+  font-size: 14px
+  font-family: $mont_med_it
+  list-style: none
+  line-height: 2
+
+.title-overlay-element
+  font-family: $mont_bold
+  font-size: 22px
+  line-height: 1.5
+
+.card-news .ib-line
+  background: transparent
+
+.ib-line
+  display: block
+  width: 100%
+  height: 2px
+  position: relative
+  margin:
+    top: 19px
+    bottom: 19px
+  max-width: 116px
+  margin-right: auto
+  margin-left: auto
+  line-height: 2
+
+  &:before
+    position: absolute
+    content: ""
+    display: inline-block
+    left: 50%
+    right: 50%
+    height: 1px
+    background-color: #fff
+    transition: 250ms 280ms ease-in-out
+
+.card-news:hover .ib-line:before
+  left: 0
+  right: 0
+
+.small-text
+  font-family: $mont_med
+  font-size: 14px
+  display: block
+  line-height: 1.625
+  padding-top: 10px
+
+.icon-plus
+  position: absolute
+  right: 20px
+  bottom: 30px
+  font-size: 40px
+  line-height: 1
+  cursor: pointer
+  width: 45px
+  height: 45px
+  border-radius: 50%
+  border: 2px solid transparent
+  transition: .3s
+
+  &:hover
+    color: #f92349
+    background-color: #fff
+    border: 2px solid #fff
+
+
+.box
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 200px
+  height: 200px
+  border: 2px solid $pink
+  margin: -2px -2px 0 0
+  transition: .3s
+
+  &:hover
+    background-color: rgba(249, 35, 111, .1)
+
+
+.side-cart
+  display: flex
+  flex-direction: column
+  background-color: #fff
+  position: fixed
+  z-index: 5000
+  top: 0
+  right: 0
+  width: 50vw
+  height: 100vh
+  transform: translate3d(100%, 0, 0)
+  transition: transform .3s linear !important
+  overflow-y: auto
+  overflow-x: hidden
+
+.side-cart.active
+  transform: translate3d(0, 0, 0)
+
+.shadow-overlay.active
+  //Для затемнения сайта
+  content: ''
+  background: #000
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  opacity: 0.7
+  z-index: 99
+
+
+.side-cart-close
+  position: absolute
+  top: 10px
+  right: 20px
+  cursor: pointer
+
+.header-cart
+  background-color: #ccc
+  padding: 10px 20px
+  display: flex
+  flex: 0 0 auto
+  align-items: center
+  justify-content: space-between
+
+.basket-table
+  display: flex
+  flex: 1 1 auto
+  flex-direction: column
+
+.basket-table-scroller
+  flex: 1 1 auto
+  height: 1px
+  overflow: auto
+  overflow-x: hidden
+
+.side-cart-item-close
+  cursor: pointer
+
+.link-cart
+  text-decoration: underline
+  color: #222222
+
+.general-page-options
+  text-align: center
+  padding: 80px 50px
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background-color: #bae9ff
+  background-image: url("../img/overlay_1.png")
+  background-repeat: no-repeat
+  background-size: cover
+
+
+.result-page
+  background-image: url("../img/overlay_1.png")
+  background-repeat: no-repeat
+  background-size: cover
+  background-color: #bae9ff
+  min-height: 100vh
+  padding: 40px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.right-column
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  margin-left: 30px
+  border: 3px solid #fff
+
+.text-choice
+  font-family: "Times New Roman", Arial, sans-serif
+  font-size: 26px
+  line-height: 1.4
+  color: #222222
+  text-transform: uppercase
+
+.choice-section
+  display: flex
+  border-bottom: 3px solid #fff
+
+.total-section
+  display: flex
+  justify-content: space-between
+
+.ib-border-right
+  border-right: 3px solid #fff
+
+
+.boxes-categories
+  padding-top: 40px
+  display: flex
+  flex-wrap: wrap
+
+  .box-categories
+    border: 3px solid #68afff
+    cursor: pointer
+
+    &:hover
+      background-color: #89e2ff
+
+.selected
+  background-color: #89e2ff
+
+.brand,
+.offer
+  font-size: 22px
+
+.stars
+  display: inline-flex
+
+.page-form
+  text-align: left
+  margin: 0 auto
+
+.btn-plus,
+.btn-close
+  font-size: 40px
+  line-height: 1
+  color: #f92349
+  cursor: pointer
+  width: 45px
+  height: 45px
+  border-radius: 50%
+  text-align: center
+  border: 2px solid transparent
+  transition: .3s
+
+  &:hover
+    color: #fff
+    background-color: #f92349
+    border: 2px solid #f92349
+
+.btn-close
+  margin-left: auto
+
+.page-submit
+  margin-bottom: 40px
+
+.last-news-item
+  height: 100%
+  min-height: 488px
+  position: relative
+  transform-style: preserve-3d
+  transition: transform 1s cubic-bezier(0.18, 0.89, 0.32, 1.28)
+
+.last-news-item-front,
+.last-news-item-back
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+
+.last-news-item-front
+  backface-visibility: hidden
+
+.last-news-item-back
+  transform: rotateY(-180deg)
+  pointer-events: none
+
+.rotate
+  transform: rotateY(-180deg)
+
+  .last-news-item-front
+    pointer-events: none
+
+  .last-news-item-back
+    pointer-events: auto
+
+.owl-carousel .owl-item img.hidden,
+.hidden
+  display: none
+
+.side-cart-item
+  border-bottom: 1px dotted #dcdcdc
+  margin-top: 15px
+  margin-bottom: 15px
+
+.side-cart-footer
+  position: relative
+  margin-top: auto
+  background-color: #ccc
+  padding: 20px 20px 40px
+
+.quantity-select
+  width: 40px
+  height: 35px
+  text-align: center
+  border: 1px solid #6c757d
+  padding: 2px
+  margin: 2px 0
+
+.btn-group-sm > .btn, .btn-sm
+  padding: .1rem
+  border-radius: 0
+
+.dis
+  background-color: #ccc
+  pointer-events: none
+
+.btn-secondary:focus
+  box-shadow: none !important
+
+.side-cart-footer a:hover
+  text-decoration: underline
+
+.continue
+  justify-content: center
+
+.container-total
+  padding: 0 20px
+
+.heading
+  width: 100%
+  line-height: 80px
+  font-size: 1.4rem
+  background: linear-gradient(to left, #0072ff, #8811c5)
+  font-family: $mont_med
+
+.card-header
+  padding: 1rem 1.25rem
+
+@media screen and (min-width: 1366px)
+  .container
+    max-width: 1170px
+    padding-right: 0
+    padding-left: 0
+
+@media screen and (max-width: 1024px)
+  .first-section
+    background-position: 30% 50%
+
+  .banner-title
+    font-size: 38px
+
+  .banner-text
+    max-width: 175px
+
+  .center-banner
+    background-size: 100% 100%
+
+  .ib-products_description
+    padding-left: 10px
+
+  .icon-payment
+    margin-bottom: 10px
+
+  .ib-card-deck .card
+    margin-bottom: 20px
+
+  .product-section .row
+    justify-content: center
+
+  .ib-fs_1
+    padding-top: 16px
+
+  .ib-fs_5
+    line-height: .4
+
+  .bg-center-banner
+    margin: 30px
+
+  .banners:after
+    content: ''
+    position: absolute
+    z-index: 2
+    background-color: #cccccc
+    opacity: .3
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+
+  .card-img-overlay
+    z-index: 22
+
+  .text-share
+    word-spacing: 0
+
+  .price-single_product
+    padding: 18px 0
+
+  .single_product-block .col-8
+    margin: 0 auto
+
+  .title-single_product
+    padding-top: 60px
+
+  .ib-border-left
+    border-left: none
+
+  .sign_up-block
+    padding-top: 0
+    padding-bottom: 50px
+
+  .map-block
+    margin-bottom: 0
+
+  .detail-brands-logo
+    max-width: 600px
+
+  .side-cart
+    width: 75vw
+
+  .ib-card-body
+    padding: 18px
+
+  .page-form
+    padding: 0
+
+  .page-submit
+    margin-bottom: 34px
+
+
+@media only screen and (max-width: 991px)
+  .last-news-item
+    min-height: 665px
+
+@media only screen and (max-width: 823px) and (orientation: landscape)
+  .last-news-item
+    min-height: 665px
+
+  .side-cart-footer
+    padding: 10px
+
+  .container-total h6, .side-cart-links a
+    font-size: 14px
+
+//iPad (768px) and smaller:
+@media screen and (max-width: 768px)
+  .ib-link
+    padding: 6px
+
+  .nav-text
+    margin-bottom: 5px
+    padding-top: 10px
+
+  .ib-navbar-brand
+    font-size: 20px
+    margin-right: 0
+
+  .ib-nav-link
+    padding: 5px
+
+  .text-big-title
+    font-size: 70px
+    letter-spacing: -6px
+
+  .first-section
+    background-position: 50% 50%
+
+  .text-big-title_year
+    font-size: 40px
+    letter-spacing: 60px
+
+  .text-bt
+    padding: 20px 15px 0
+
+  .title-info
+    font-size: 18px
+    margin-top: 30px
+
+  .ib-text-info,
+  .subtitle-subs
+    font-size: 14px
+
+  .ib-banner
+    flex-direction: column
+    align-items: center
+    margin-top: 50px
+
+  .banner-01
+    margin-right: 0
+    margin-bottom: 40px
+
+  .banners
+    width: 88%
+
+  .block-featured-products
+    padding-top: 60px
+
+  .ib-card-deck .card
+    margin:
+      right: 10px
+      left: 10px
+      bottom: 30px
+
+  .detail-block_1
+    padding-left: 15px
+
+  .ib-fs_5
+    padding-bottom: 40px
+
+  .title-product-section
+    margin-top: 44px
+
+  .title-footer
+    margin-top: 50px
+
+  .bottom_text-footer
+    padding-bottom: 50px
+
+  .nav-email
+    padding-left: 15px
+
+  .circle-icon
+    width: 100px
+    height: 100px
+    line-height: 100px
+    top: -40px
+
+  .ib-padding
+    padding-top: 0
+
+  .ib-border
+    padding:
+      left: 0
+      right: 0
+
+  .text-fixed
+    width: 80%
+    padding: 8px
+
+  .alert-dismissible
+    padding-right: 0
+
+  .alert
+    padding: .5rem 0
+    margin-bottom: 0
+    border: none
+
+  .bg-center-banner
+    margin: 16px
+
+  .ib-nav-pills
+    padding: .5rem .9rem
+
+  .ib-form
+    padding: 20px 0
+
+  .icon-share
+    padding: 6px
+
+  .btn-single_product
+    letter-spacing: 0
+
+  .title-subs
+    font-size: 24px
+
+  .detail-brands-logo
+    max-width: 400px
+
+  .ib-nav
+    background-color: rgba(255, 255, 255, 0.9)
+
+  .side-cart
+    width: 90vw
+
+  .last-news-item
+    //min-height: 586px
+    min-height: 700px
+
+  .last-news-item-back
+    display: flex
+    justify-content: center
+    align-items: center
+
+  .side-cart-footer
+    padding: 15px
+
+  .container-total h6, .side-cart-links a
+    font-size: 14px
+
+@media only screen and (max-width: 736px) and (orientation: landscape)
+  .last-news-item
+    min-height: 585px
+
+
+////mobile devices:
+@media screen and (max-width: 640px)
+  .text-fixed
+    font-size: 14px
+
+  .nav-text
+    font-size: 14px
+
+  .nav-email
+    padding-left: 54px
+
+  .ib-border
+    padding:
+      left: 15px
+      right: 15px
+
+  .ib-navbar-brand
+    padding-left: 15px
+
+  .navbar-toggler
+    margin-right: 15px
+
+  .navbar-nav
+    text-align: center
+
+  .jcc
+    justify-content: center
+
+  .first-section
+    min-height: 900px
+    background-position: 0
+
+  .text-big-title_year
+    letter-spacing: normal
+    padding-left: 15px
+
+  .title-info
+    font-size: 16px
+
+  .banners
+    width: 100%
+
+  .ib-email
+    width: 90%
+    margin-bottom: 10px
+
+  .btn-subscribe
+    width: 90%
+
+  .nav-icons-footer
+    margin: 0
+    padding: 10px
+
+  .bottom_text-footer
+    padding-top: 10px
+
+  .icon-payment
+    margin-bottom: 30px
+
+  .ib-link
+    padding: 4px
+
+  .ib-fs_1
+    font-size: 65px
+
+  .ib-fs_2
+    font-size: 116px
+
+  .ib-fs_4
+    font-size: 100px
+
+  .ib-bb
+    margin: 15% auto
+
+  .ib-fs_5
+    font-size: 118px
+
+  .title-footer
+    font-size: 16px
+
+  .ib-link-footer
+    font-size: 14px
+
+  .text-big-title
+    font-size: 67px
+
+  .text-share
+    word-spacing: 7px
+
+  .btn-single_product
+    font-size: 16px
+    padding: 12px
+    margin-bottom: 12px
+
+  .ib-nav-pills
+    font-size: 14px
+    padding: 12px
+
+  .ib-btn-add
+    margin: 0 auto
+    text-align: center
+
+  .map-responsive
+    padding-bottom: 70%
+
+  .box
+    width: 150px
+    height: 150px
+
+  .detail-brands-logo
+    max-width: 300px
+
+  .last-news-item
+    min-height: 573px
+
+  .side-cart-links
+    font-size: 12px
+
+  .description-carousel, .name-brand, .description-cart
+    font-size: 14px
+    margin-bottom: 0
+
+  .quantity-select
+    width: 36px
+    height: 32px
+
+  .container-total h6, .side-cart-links a
+    font-size: 12px
+
+
+@media only screen and (max-width: 640px) and (orientation: landscape)
+  .last-news-item
+    min-height: 570px
+
+//iPhone 5/5S:
+@media screen and (max-width: 320px)
+  .ib-link
+    padding: 0
+
+  .nav-text
+    margin-top: 0
+
+  .text-big-title
+    font-size: 55px
+    letter-spacing: -4px
+
+  .first-section
+    min-height: 834px
+
+  .circle-icon
+    width: 80px
+    height: 80px
+    line-height: 80px
+    top: -30px
+
+  .title-info
+    margin-top: 46px
+
+  .ib-text-info
+    font-size: 12px
+
+  .bg-center-banner
+    margin: 0
+
+  .ib-fs_1
+    font-size: 56px
+
+  .ib-fs_2
+    font-size: 104px
+
+  .ib-fs_3
+    font-size: 54px
+
+  .ib-fs_4
+    font-size: 90px
+
+  .ib-fs_5
+    font-size: 106px
+
+  .ib-products_description .subtitle_brand
+    font-size: 14px
+
+  .ib-nav-pills
+    padding: 10px
+
+  .details_single-product
+    padding: 4px
+
+  .single_product-block
+    padding-bottom: 50px
+    padding-top: 40px
+
+  .box
+    width: 100px
+    height: 100px
+
+  .detail-brands-logo
+    max-width: 200px
+
+  .last-news-item
+    min-height: 470px
+
+  .quantity-select
+    width: 28px
+    height: 24px
+
+  .side-cart-item .text-center
+    padding-right: 5px
+    padding-left: 5px
+
+  .description-cart
+    font-size: 12px
+
+  .continue
+    padding-left: 0
+    padding-right: 0
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+.ib-link-edit, .ib-link-remove {
+    text-decoration: underline;
+}
+
+#product-img {
+    border: 1px solid #ced4da;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.upload-wrap {
+    display: inline-flex;
+    width: 300px;
+    height: 350px;
+}
+
+#product_img_container img {
+    max-width: none;
+}
+
+.cr-slider-wrap {
+    display: none;
+}
+
+.placeholder-img {
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
